@@ -1,0 +1,587 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container
+{
+    width:100%;
+    height:3000px;
+    padding:30px 50px;
+    background-color: #333;
+}
+.container .header
+{
+    width:100%;
+    height:200px;
+    
+}
+.container .header .header-up
+{
+    display: flex;
+    width:100%;
+    height:100px;
+}
+.container .header .header-up .logo
+{
+    width:27.5%;
+    height:70px;
+    margin-top:10px;
+    background-image:url('https://www.misli.az/_nuxt/90e4f5d9f96da055838777c8db5ec7c3.svg');
+    background-size:100px 50x;
+    background-repeat: no-repeat;
+}
+.container .header .header-up .menu-up
+{
+    width:45%;
+    height:50px;
+    padding-top:20px;
+    border-bottom:1px solid #fff;
+}
+.container .header .header-up .menu-up >ul
+{
+    display: flex;
+    list-style-type: none;
+}
+.container .header .header-up .menu-up ul >li
+{
+    display: block;
+    margin-left:23px;
+}
+.container .header .header-up .menu-up >ul >li:hover 
+{
+    height:100px;
+  
+}
+.container .header .header-up .menu-up >ul >li:hover >a
+{
+    color:#fe4100;
+}
+.container .header .header-up .menu-up >ul >li:hover ul
+{
+    display:block;
+}
+.container .header .header-up .menu-up >ul >li:first-child
+{
+    margin-left:3px;
+}
+.container .header .header-up .menu-up >ul >li ul
+{
+    display:none;
+    position: absolute;
+    top:80px;
+    width:200px;
+    height:85px;
+    border-radius:10px;
+    padding:5px;
+    font-family:sans-serif;
+    font-weight: bold;
+    font-size:15px;
+    border:1px solid #fe4100;
+    background-color: rgb(22, 21, 21);
+    color:#fff;
+    list-style: none;
+    z-index: 3;
+}
+.container .header .header-up .menu-up >ul >li ul li a:hover
+{
+    color:#fe4100;
+}
+.container .header .header-up .menu-up ul >li:nth-child(3) ul
+{
+    width:250px;
+    height:100px;
+    font-family:sans-serif;
+    font-weight: bold;
+    font-size:13px;
+}
+.container .header .header-up .menu-up ul >li:nth-child(4) ul
+{
+    font-family:sans-serif;
+    font-weight: bold;
+    font-size:12px;
+}
+.container .header .header-up .menu-up ul >li:nth-child(5) ul
+{
+    width:180px;
+    height:120px;
+    font-family:sans-serif;
+    font-weight: bold;
+    font-size:11px;
+    list-style-type:circle;
+}
+.container .header .header-up .menu-up ul li:first-child ul li
+{
+    margin-top:3px;
+}
+.container .header .header-up .menu-up ul li a
+{
+    text-decoration: none;
+    color:#fff;
+    font-family:sans-serif;
+    font-size:15px;
+    font-weight: bolder;
+}
+.container .header .header-up .login
+{
+    display: flex;
+    justify-content: end;
+    width:27.5%;
+    height:100px;
+    padding-top:15px;
+
+}
+.container .header .header-up .login .profil
+{
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    top:20px;
+    right:10px;
+    width:300px;
+    height:100px;
+    background-color: #333;
+    z-index:12;
+}
+.container .header .header-up .login .profil-icon
+{
+    width:45px;
+    height:45px;
+    margin-top:20px;
+    margin-left:20px;
+    background-color: #fff;
+    border-radius:50%;
+    text-align: center;
+    font-size:30px;
+    color:#fe4100;
+    padding-top:5px;
+}
+.container .header .header-up .login .profil-info
+{
+    width:200px;
+    height:50px;
+    margin-top:20px;
+    margin-left:20px;
+    padding-top:5px;
+}
+.container .header .header-up .login .profil-name
+{
+    font-family:sans-serif;
+    font-size:15px;
+    color:#fff;
+    font-weight: bold;
+}
+.container .header .header-up .login .profil-content
+{
+    margin-top:5px;
+    font-family:sans-serif;
+    font-size:12px;
+    color:#fff;
+    font-weight: bold;
+}
+.container .header .header-up .login .login-btn1
+{
+    width:100px;
+    height:38px;
+    background-color:#fe4100;
+    border:none;
+    border-radius:5px;
+    color:#fff;
+    font-family:sans-serif;
+    font-size:15px;
+    font-weight: bolder;
+}
+.container .header .header-up .login .login-btn2
+{
+    width:100px;
+    height:38px;
+    margin-left: 20px;
+    background-color:#fff;
+    border:none;
+    border-radius:5px;
+    color:#fe4100;
+    font-family:sans-serif;
+    font-size:15px;
+    font-weight: bolder;
+}
+.container .header .header-up .login .daxilol
+{
+    display: none;
+    position: absolute;
+    left:530px;
+    top:175px;
+    width:420px;
+    height:570px;
+    border-radius:5px;
+    background-color: #fff;
+    z-index:8;
+}
+.container .header .header-up .login .daxilol #backicon
+{
+    position: absolute;
+    top:15px;
+    right:15px;
+    font-size:18px;
+    color:#888
+}
+.container .header .header-up .login .daxilol .daxilol-header
+{
+    width:100%;
+    height:80px;
+    padding-top:30px;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+    font-family: sans-serif;
+    font-size:18px;
+    text-align: center;
+}
+.container .header .header-up .login .daxilol .daxilol-userid
+{
+    display:block;
+    width:350px;
+    height:55px;
+    border:none;
+    border:1px solid #ccc;
+    border-radius:10px;
+    margin:30px auto;
+}
+.container .header .header-up .login .daxilol .mobno
+{
+    position:absolute;
+    width:200px;
+    height:30px;
+    background-color: #fff;
+    top:100px;
+    left:60px;
+    text-align: center;
+    letter-spacing:1px;
+    font-family: sans-serif;
+    font-size:14px;
+    text-align: center;
+    color:#333
+}
+.container .header .header-up .login .daxilol .qeyd
+{
+    position: absolute;
+    top:170px;
+    left:35px;
+    font-family: sans-serif;
+    font-size:14px;
+    text-align: center;
+    color:#888
+}
+.container .header .header-up .login .daxilol .daxilol-password
+{
+    display:block;
+    width:350px;
+    height:55px;
+    border:none;
+    border:1px solid #ccc;
+    border-radius:10px;
+    margin-top:60px;
+    margin-left:35px;
+}
+.container .header .header-up .login .daxilol .sifre
+{
+    position:absolute;
+    width:50px;
+    height:30px;
+    background-color: #fff;
+    top:218px;
+    left:60px;
+    text-align: center;
+    letter-spacing:1px;
+    font-family: sans-serif;
+    font-size:14px;
+    text-align: center;
+    color:#333
+}
+.container .header .header-up .login .daxilol .remember
+{
+    font-family: sans-serif;
+    font-weight:550;
+    font-size:14px;
+    margin-top:10px;
+    margin-left:35px;
+    border-radius:5px;
+}
+.container .header .header-up .login .daxilol .daxilol-btn1
+{
+    display: block;
+    width:350px;
+    height:60px;
+    background-color: #fe4100;
+    color:#fff;
+    border: none;
+    border-radius:5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size:14px;
+    margin:10px auto;
+}
+.container .header .header-up .login .daxilol .daxilol-btn2
+{
+    display: block;
+    width:350px;
+    height:60px;
+    background-color:#fff;
+    color:#fe4100;
+    border:1px solid #fe4100;
+    border-radius:5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size:14px;
+    text-align: center;
+    margin:10px auto;
+    
+}
+.container .header .header-up .login .daxilol .forgot
+{
+    font-family: sans-serif;
+    font-size:14px;
+    margin-left:35px;
+    margin-top:15px;
+    color:#333;
+}
+.container .header .header-up .login .daxilol .error
+{
+    display: none;
+    width:350px;
+    height:60px;
+    border-radius: 10px;
+    background-color: #e9c8cf;
+    font-family: sans-serif;
+    font-size:13px;
+    margin-left:30px;
+    margin-top:5px;
+    padding:10px;
+    color:#f00;
+}
+.container .header .header-up .login .daxilol .remember::before
+{
+    content:'';
+    display: inline-block;
+    width:18px;
+    height:18px;
+    margin-top:5px;
+    border-radius:5px;
+    background-color: #fe4100;
+    border:4px solid #ccc;
+    vertical-align: bottom;
+    margin-right:5px;
+
+}
+.container .header .header-down
+{
+    position: relative;
+    display: flex;
+    width:100%;
+    height:85px;
+    background-color: rgba(31,31,31,.75);
+}
+.chevron-left
+{
+    position: absolute;
+    display:none;
+    top:20px;
+    left:10px;
+    width:30px;
+    padding:5px;
+    margin-top:10px;
+    height:30px;
+    border-radius:50%;
+    background-color: #fff;
+    z-index: 555;
+}
+.chevron-right
+{
+    position: absolute;
+    display:none;
+    top:20px;
+    right:350px;
+    width:30px;
+    padding:5px;
+    margin-top:10px;
+    height:30px;
+    border-radius:50%;
+    background-color: #fff;
+    z-index: 555;
+}
+.chevron-right i,.chevron-left i
+{
+    color:#fe4100;
+    font-size:20px;
+}
+.container .header .header-down .menu-down
+{
+    width:72%;
+    height:80px;
+    padding:20px;
+    overflow:hidden;
+    z-index: 5;
+    scroll-behavior: smooth;
+}
+.container .header .header-down:hover .chevron-right
+{
+    display: block;
+}
+.container .header .header-down .menu-down ul
+{
+    display: flex;
+    list-style-type: none;
+}
+
+.container .header .header-down .menu-down ul li
+{
+    min-width:100px;
+    margin-left:30px;
+}
+.container .header .header-down .menu-down ul li:nth-child(8)
+{
+    min-width:120px;
+    margin-left:30px;
+}
+.container .header .header-down .menu-down ul li:nth-child(9)
+{
+    min-width:70px;
+    margin-left:10px;
+}
+.container .header .header-down .menu-down ul li::before
+{
+    content:"";
+    display:block;
+    width:35px;
+    height:35px;
+    margin-left:10px;
+    margin-bottom:5px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container .header .header-down .menu-down ul li:first-child::before
+{
+    margin-left:-5px;
+    background-image: url('https://www.misli.az/_nuxt/0fb7cce45fe02bfe4e212de242065f2d.svg');
+}
+.container .header .header-down .menu-down ul li:nth-child(2)::before
+{
+    background-image: url('https://www.misli.az/_nuxt/img/823e439.png');
+}
+.container .header .header-down .menu-down ul li:nth-child(3)::before
+{
+    margin-left:22px;
+    background-image: url('https://statics.misli.az/public/2022/03/31/1648724296089_7b08b9eb96845b169b713669020f6be4.png');
+}
+.container .header .header-down .menu-down ul li:nth-child(4)::before
+{
+    margin-left:30px;
+    background-image: url('https://statics.misli.az/public/2022/03/31/1648724304095_75ffd2a7bd2f84a1bdf3bd03a93b4261.png');
+}
+.container .header .header-down .menu-down ul li:nth-child(5)::before
+{
+    margin-left:15px;
+    background-image: url('https://statics.misli.az/public/2022/03/31/1648724326848_1fbfb23351e3580651395ab721f5e935.png');
+}
+.container .header .header-down .menu-down ul li:nth-child(6)::before
+{
+    margin-left:25px;
+    background-image: url('https://statics.misli.az/public/2022/03/31/1648724375172_b9363019d8f57cdd6f2c9fcbc171208e.png');
+}
+.container .header .header-down .menu-down ul li:nth-child(7)::before
+{
+    margin-left:15px;
+    background-image: url('https://statics.misli.az/public/2022/03/31/1648724313124_411e979476cb118b390d14c606b89617.png');
+}
+.container .header .header-down .menu-down ul li:nth-child(8)::before
+{
+    margin-left:25px;
+    background-image: url('https://statics.misli.az/public/2022/03/31/1648724334309_aadb47bbbe92e959be61ca5652f34662.png');
+}
+.container .header .header-down .menu-down ul li:nth-child(9)::before
+{
+    margin-left:15px;
+    background-image: url('https://statics.misli.az/public/2022/03/31/1648724362511_b9ece18c950afbfa6b0fdbfa4ff731d3.png');
+}
+.container .header .header-down .menu-down ul li:nth-child(10)::before
+{
+    margin-left:10px;
+    background-image: url('https://statics.misli.az/public/2022/03/31/1648730193881_0374745b8aa244784ada619c9948181f.png');
+}
+.container .header .header-down .menu-down ul li:nth-child(11)::before
+{
+    margin-left:10px;
+    background-image: url('https://statics.misli.az/public/2022/03/31/1648724296089_7b08b9eb96845b169b713669020f6be4.png');
+}
+.container .header .header-down .menu-down ul li a
+{
+    text-decoration: none;
+    color:#fff;
+    font-family:sans-serif;
+    font-size:14px;
+    font-weight: bolder;
+}
+.container .header .header-down .coupon-box
+{
+    position: absolute;
+    right:0;
+    width:400px;
+    height:85px;
+    background-color: rgba(31,31,31,.75);
+    z-index: 2;
+}
+.container .header .header-down .coupon-box .coupon
+{
+    display: flex;
+    width:300px;
+    height:50px;
+    margin-top:15px;
+    margin-left:80px;
+}
+.container .header .header-down .coupon-box .coupon .coupon-left
+{
+    width:55%;
+    height:50px;
+    background-color:rgb(251, 244, 249);
+}
+.container .header .header-down .coupon-box .coupon .coupon-left .kuponum
+{
+    padding:10px 5px;
+    font-family:sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    color:#333;
+}
+.container .header .header-down .coupon-box .coupon .coupon-left .kuponum::after
+{
+    content:'0';
+    display:inline-block;
+    width:25px;
+    height:25x;
+    margin-left:20px;
+    color:#fff;
+    text-align:center;
+    background-color: rgba(89, 96, 98, 0.75);
+}
+.container .header .header-down .coupon-box .coupon .coupon-right
+{
+    width:45%;
+    height:50px;
+    padding:10px;
+    background-color: rgba(154, 223, 238, 0.75);
+}
+.container .header .header-down .coupon-box .coupon .coupon-right .coupon-right-text
+{
+    display: inline-block;
+    font-family:sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    color:#fff;
+}
+.container .header .header-down .coupon-box .coupon .coupon-right .coupon-right-icon
+{
+    margin-left:20px;
+    font-size:20px;
+    font-weight:bold;
+    color:#fff;
+}
