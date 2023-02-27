@@ -2,7 +2,7 @@ const chevronRight=document.querySelector('#chevron-right');
 const menuDown=document.querySelector('.menu-down');
 const chevronLeft=document.querySelector('#chevron-left');
 
-let scrollAmount=30;
+let scrollAmount=50;
 chevronRight.addEventListener('click',()=>
 {
     
