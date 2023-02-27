@@ -82,7 +82,7 @@
     background-color: rgb(22, 21, 21);
     color:#fff;
     list-style: none;
-    z-index: 3;
+    z-index:888;
 }
 .container .header .header-up .menu-up >ul >li ul li a:hover
 {
@@ -584,4 +584,323 @@
     font-size:20px;
     font-weight:bold;
     color:#fff;
+}
+.container .main
+{
+    width:100%;
+    height:2000px;
+}
+.container .main .section1
+{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height:400px;
+}
+.container .main .section1 .slider
+{
+    width:68%;
+    height:400px;
+    border-radius:10px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    transition:1s;
+    transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.container .main .section1 .liveboard
+{
+    width:30%;
+    height:400px;
+    padding:20px;
+    border-radius:10px;
+    background-image:url('https://thetravelconnexion.co.za/wp-content/uploads/2019/11/static1.squarespace.jpg');
+    background-size:420px 400px;
+    background-repeat:no-repeat;
+}
+.container .main .section1 .liveboard .liveboard-part1
+{
+    width:75px;
+    height:30px;
+    margin:20px auto;
+    padding-top:3px;
+    border-radius:5px;
+    background-color: #fe4100;
+    color:#fff;
+    font-family: sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    text-align: center;
+}
+.container .main .section1 .liveboard .liveboard-part2
+{
+
+    display:flex;
+    position: relative;
+    justify-content: space-between;
+    width:100%;
+    height:100px;
+}
+.container .main .section1 .liveboard .liveboard-part2 .greenbox
+{
+    width:100px;
+    height:100px;
+    color:#fff;
+    padding:20px;
+    background-color: rgb(12, 151, 31);
+    font-family: sans-serif;
+    font-size:45px;
+    font-weight:bolder;
+    text-align: center;
+}
+.container .main .section1 .liveboard .liveboard-part2 .greenbox-1::after
+{
+    content:"JAPAN";
+    position: absolute;
+    top:120px;
+    left:15px;
+    font-size:20px;
+}
+.container .main .section1 .liveboard .liveboard-part2 .greenbox-2::after
+{
+    content:"CROATIA";
+    position: absolute;
+    top:120px;
+    right:10px;
+    font-size:20px;
+}
+.container .main .section1 .liveboard .liveboard-part2 .bh
+{
+    font-family: sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    color:#fff;
+    margin-left:30px;
+    padding-top:10px;
+}
+.container .main .section1 .liveboard .liveboard-part2 .time
+{
+    width:80px;
+    height:80px;
+    color:#fff;
+    padding:20px;
+    background-color:transparent;
+    font-family: sans-serif;
+    font-size:35px;
+    font-weight:bold;
+    text-align: center;
+}
+.container .main .section1 .liveboard .liveboard-part2 .time .minute
+{
+    color:#fe4100;
+    animation:minuteAnimate 1s infinite;
+}
+@keyframes minuteAnimate
+{
+    0%
+    {
+        color:aquamarine
+    }
+    50%
+    {
+        color:beige;
+    }
+    100%
+    {
+        color:rgb(129, 153, 32);
+    }
+}
+.container .main .section1 .liveboard .liveboard-part3
+{
+    width:100%;
+    height:25px;
+    margin-top:75px;
+    color:#fff;
+    text-align:center;
+    font-family:sans-serif;
+    font-size:14px;
+    font-weight:bold;
+}
+.container .main .section1 .liveboard .liveboard-part3::after
+{
+    content:'1';
+    display: inline-block;
+    width:20px;
+    height:20px;
+    margin-top:5px;
+    padding-top:3px;
+    color:#fff;
+    background-color:#fe4100;   
+}
+.container .main .section1 .liveboard .liveboard-part4
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+}
+.container .main .section1 .liveboard .liveboard-part4 .odds
+{
+    display:inline-block;
+    width:100px;
+    height:30px;
+    padding:5px;
+    background-color: #fff;
+    color:#333;
+    border-radius:5px;
+}
+.container .main .section1 .liveboard .liveboard-part5
+{
+    width:100%;
+    height:25px;
+    margin-top:25px;
+    color:#fff;
+    text-align:center;
+    font-family:sans-serif;
+    font-size:18px;
+    font-weight:bold;
+}
+.container .main .section2
+{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height:270px;
+    margin-top:30px;
+}
+.container .main .section2 .section2-card1
+{
+    width:32%;
+    height:260px;
+}
+.container .main .section2 .section2-card1 .section2-card1-img
+{
+    width:100%;
+    height:178px;
+    background-image:url('https://statics.misli.az/public/2022/07/20/1658326097380_dd2b4298787119e45d4565d084759f6a.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+.container .main .section2 .section2-card1 .section2-card1-info
+{
+    display: flex;
+    width:100%;
+    height:60px;
+    padding:20px 10px 20px 10px;
+    background-color: rgb(24, 14, 14);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+.container .main .section2 .section2-card1 .section2-card1-text
+{
+    width:62%;
+    height:35px;
+    font-family:sans-serif;
+    font-size:12px;
+    color:#fff;
+    font-weight: bold;
+}
+.container .main .section2 .section2-card1 .section2-card1-btn
+{
+    width:38%;
+    height:30px;
+    border:none;
+    border-radius:10px;
+    background-color:#fff;
+    color: #fe4100;
+    font-family:sans-serif;
+    font-size:15px;
+    font-weight: bold;
+}
+.container .main .section2 .section2-card2
+{
+    width:32%;
+    height:260px;
+}
+.container .main .section2 .section2-card2 .section2-card2-img
+{
+    width:100%;
+    height:178px;
+    background-image:url('https://statics.misli.az/public/2022/06/22/1655888973831_c4c82f631f7efb4214175b8d8b53e313.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+.container .main .section2 .section2-card2 .section2-card2-info
+{
+    display: flex;
+    width:100%;
+    height:60px;
+    padding:20px 10px 20px 10px;
+    background-color: rgb(24, 14, 14);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+.container .main .section2 .section2-card2 .section2-card2-text
+{
+    width:62%;
+    height:35px;
+    font-family:sans-serif;
+    font-size:12px;
+    color:#fff;
+    font-weight: bold;
+}
+.container .main .section2 .section2-card2 .section2-card2-btn
+{
+    width:38%;
+    height:30px;
+    border:none;
+    border-radius:10px;
+    background-color:#fff;
+    color: #fe4100;
+    font-family:sans-serif;
+    font-size:15px;
+    font-weight: bold;
+}
+.container .main .section2 .section2-card3
+{
+    width:32%;
+    height:260px;
+}
+.container .main .section2 .section2-card3 .section2-card3-img
+{
+    width:100%;
+    height:178px;
+    background-image:url('https://statics.misli.az/public/2022/03/11/1646989133197_f1d4c2603aa5165ce58b0d0b43f5eaad.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+.container .main .section2 .section2-card3 .section2-card3-info
+{
+    display: flex;
+    width:100%;
+    height:60px;
+    padding:20px 10px 20px 10px;
+    background-color: rgb(24, 14, 14);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+.container .main .section2 .section2-card3 .section2-card3-text
+{
+    width:62%;
+    height:35px;
+    font-family:sans-serif;
+    font-size:12px;
+    color:#fff;
+    font-weight: bold;
+}
+.container .main .section2 .section2-card3 .section2-card3-btn
+{
+    width:38%;
+    height:30px;
+    border:none;
+    border-radius:10px;
+    background-color:#fff;
+    color: #fe4100;
+    font-family:sans-serif;
+    font-size:15px;
+    font-weight: bold;
 }
